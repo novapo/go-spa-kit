@@ -21,6 +21,7 @@ func main() {
 	http.ListenAndServe(":"+strconv.Itoa(conf.Port), r)
 }
 
+// AdminHandler serves the admin area for spa-kit
 func AdminHandler(w http.ResponseWriter, req *http.Request) {
 	adminPage, err := ioutil.ReadFile("admin/admin.html")
 	if err != nil {
@@ -36,6 +37,7 @@ func AdminHandler(w http.ResponseWriter, req *http.Request) {
 	}
 }
 
+// LoginHandler handles admin login for spa-kit
 func LoginHandler(w http.ResponseWriter, req *http.Request) {
 	if req.Method == "GET" {
 		loginPage, err := ioutil.ReadFile("admin/login.html")
