@@ -32,4 +32,4 @@ Need:
 * getName(): string
 * setCofig(string): err
 * init(): err
-* getMetaData(string): err
+* getMetaData(): err

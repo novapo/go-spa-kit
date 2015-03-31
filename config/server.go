@@ -6,7 +6,14 @@ type ServerConfig struct {
 	Path string
 }
 
+var serverConfig *ServerConfig
+
 // GetServerConfig returns a ServerConfig Instance filled with config data
 func GetServerConfig() ServerConfig {
-	return ServerConfig{8000, "/var/www"}
+
+	if serverConfig == nil {
+		serverConfig = &ServerConfig{8000, "/srv/http"}
+	}
+
+	return *serverConfig
 }
