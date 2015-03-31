@@ -1,4 +1,4 @@
-# go-spa-kit
+# go-spa-kit [![wercker status](https://app.wercker.com/status/1b40701f67b072d03c5a3d174c46f8ab/m "wercker status")](https://app.wercker.com/project/bykey/1b40701f67b072d03c5a3d174c46f8ab)
 ###The ultimate component backend for single page applications written in go
 
 ####General
