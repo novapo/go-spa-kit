@@ -12,7 +12,7 @@ var serverConfig *ServerConfig
 func GetServerConfig() ServerConfig {
 
 	if serverConfig == nil {
-		serverConfig = &ServerConfig{8000, "/srv/http"}
+		serverConfig = &ServerConfig{8000, "/var/www"}
 	}
 
 	return *serverConfig
