@@ -33,3 +33,22 @@ Need:
 * setCofig(string): err
 * init(): err
 * getMetaData(): err
+
+
+Global config
+```json
+{
+  "server": {
+    "port": 8000
+  },
+  "admin": {
+    "user": "admin",
+    "password": "admin"
+  }
+  "plugins": [
+    "<plugin-name>": {
+      #plugin specific config
+    }
+  ]
+}
+```
