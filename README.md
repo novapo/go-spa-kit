@@ -45,10 +45,10 @@ Global config
     "user": "admin",
     "password": "admin"
   }
-  "plugins": [
+  "plugins": {
     "<plugin-name>": {
       #plugin specific config
     }
-  ]
+  }
 }
 ```

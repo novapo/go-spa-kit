@@ -41,7 +41,6 @@ func LoginHandler(w http.ResponseWriter, req *http.Request) {
 
 		login := req.PostForm.Get("login")
 		password := req.PostForm.Get("password")
-
 		if login == config.AdnConf.Login && password == config.AdnConf.Password {
 			session, _ := store.Get(req, "session-name")
 			// Set some session values.
