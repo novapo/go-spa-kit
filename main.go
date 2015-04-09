@@ -7,6 +7,7 @@ import (
 	"strconv"
 
 	"github.com/novapo/go-spa-kit/config"
+	"github.com/novapo/go-spa-kit/db"
 )
 
 func main() {
@@ -19,5 +20,6 @@ func main() {
 
 func start() {
 	conf := config.GetServerConfig()
+	db.Init()
 	http.ListenAndServe(":"+strconv.Itoa(conf.Port), createRouter())
 }
